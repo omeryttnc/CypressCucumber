@@ -1,0 +1,29 @@
+{
+  "name": "cypresscucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:runner": "cypress open --e2e --browser chrome",
+    "cypress:execution": "cypress run --spec cypress/e2e/features/*",
+    "cypress:execution-tags": "cypress run --headed --browser chrome --env tags=@Deneme"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.0",
+    "@cucumber/cucumber": "^10.0.1",
+    "cypress": "^12.14.0",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "cypress-plugin-api": "^2.10.0",
+    "cypress-xpath": "^2.0.1",
+    "faker": "^5.5.3",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.19.5"
+  }
+}
